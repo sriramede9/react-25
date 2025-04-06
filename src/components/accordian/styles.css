@@ -1,0 +1,36 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .accordion-item {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .accordion-item:hover {
+    background-color: #e0e0e0;
+  }
+  .accordion-item.active {
+    background-color: #d0d0d0;
+  }
+  .accordion-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .accordion-content {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  .accordion-content.hidden {
+    display: none;
+  }
+  .accordion-content.visible {
+    display: block;
+  }
+
+  .accordion-button {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
