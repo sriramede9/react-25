@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Accordion from './components/accordian';
 import data from './components/accordian/data';
