@@ -1,0 +1,67 @@
+.image-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Prevents overflow of images */
+}
+
+.image-slider-container {
+    width: 100%;
+    height: 400px; /* Set a fixed height for the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Position relative for absolute positioning of arrows */
+}
+
+.image-slider-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.image-slider-arrow {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* Width of the arrow button */
+    height: 40px; /* Height of the arrow button */
+    display: none; /* Initially hidden */
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute; /* Position absolute to place arrows */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+    z-index: 1; /* Ensure arrows are above the image */
+    transition: background-color 0.3s ease;
+}
+
+.image-slider-arrow.left {
+    left: 10px; /* Position left arrow */
+}
+
+.image-slider-arrow.right {
+    right: 10px; /* Position right arrow */
+}
+
+.image-slider-container:hover .image-slider-arrow {
+    display: flex; /* Show arrows on hover */
+}
+
+.image-slider-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.image-slider-empty {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 20px 0;
+}

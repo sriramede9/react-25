@@ -1,11 +1,12 @@
 import './App.css';
-import Accordion from './components/accordian';
-import data from './components/accordian/data';
+// import Accordion from './components/accordian';
+import data from './components/image-slider/data';
+import ImageSlider from './components/image-slider';
 
 function App() {
   return (
     <div className="App">
-      <Accordion data={data}/>
+      <ImageSlider data={data}/>
     </div>
   );
 }
